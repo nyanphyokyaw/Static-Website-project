@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spec-X SmartPhones Shop</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" 
+     href="slide.css">
+</head>
+<body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="img/9.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="img/good.jpg" style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="img/service.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="img/discount.jpg" style="width:70%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="img/Slide1.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="img/Slide3.jpg" style="width:70%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<!-- -------------------------------------------------- -->
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+	<div id="header">
+		<h1 class="cap"><marquee><i>Spec-X SmartPhones Shop</i></marquee></h1>
+		<ul class="menu1">
+			<li class="sub"><a href="index.html">Home</a></li>
+			<li class="sub"><a href="index.html">Phone Type:</a>
+			<ul>
+				<li class="sub"><a href="index.html">Idevices</a>
+					<ul>
+						<li><a href="Iphone.html">Iphone</a></li>
+						<li><a href="Ipad.html">Ipad</a></li>
+					</ul>
+					</li>
+				<li><a href="index.html">Samsung</a>
+					<ul>
+						<li><a href="Samsung s.html">Samsung S</a></li>
+						<li><a href="Samsung Note.html">Samsung Note</a></li>
+						<li><a href="Samsungtab.html">Tablet</a></li>
+					</ul>
+					</li>
+				<li><a href="index.html">Huawei</a>
+					<ul>
+						<li><a href="Huawei Mate.html">Huawei Mate</a></li>
+						<li><a href="Huaweip.html">Huawei P</a></li>
+						<li><a href="Huaweinova.html">Huawei Nova</a></li>
+						<li><a href="Huaweitablet.html">Huawei Tablet</a></li>
+					</ul>
+					</li>
+				<li><a href="index.html">Xiaomi</a>
+					<ul>
+						<li><a href="Mi.html">Mi</a></li>
+						<li><a href="Minote.html">Mi Note</a></li>
+						<li><a href="Redmi.html">Redmi</a></li>
+						<li><a href="Mimix.html">Mi Mix+Mipad</a></li>
+					</ul>
+					</li>
+				<li><a href="index.html">Vivo Phone</a>
+					<ul>
+						<li><a href="Vivo.html">Vivo</a></li>
+					</ul>
+					</li>
+				<li><a href="index.html">Oppo Phone</a>
+					<ul>
+						<li><a href="Oppo.html">Oppo</a></li>
+					</ul>
+					</li>
+				<li><a href="index.html">Oneplus Phone</a>
+					<ul>
+						<li><a href="Oneplus.html">Oneplus</a></li>
+					</ul>
+					</li>
+				<li><a href="index.html">Google Pixel Phone</a>
+					<ul>
+						<li><a href="Googlepixel.html">Google Phone</a></li>
+					</ul>
+					</li>
+				<li><a href="index.html">Gaming Phones</a>
+					<ul>
+						<li><a href="Gamingphone.html">Gaming Only</a></li>
+					</ul>
+					</li>
+			</ul>
+			</li>
+			<li class="sub"><a href="index.html">Phones Review </a>
+			<ul>
+				<li><a href="Review.html">Iphone Review</a>
+				<li><a href="Samsungreview.html">Samsung Rev</a>
+				<li><a href="Huaweireview.html">Huawei Review</a>
+				<li><a href="Mireview.html">Xiaomi Review</a>
+				<li><a href="Vivoreview.html">Vivo Review</a>
+				<li><a href="Opporeview.html">Oppo Review</a>
+				<li><a href="Oneplusreview.html">Oneplus Rev</a>
+				<li><a href="Googlepixelreview.html">Google Review</a>
+				<li><a href="Gameingreview.html">Game Review</a>
+				</ul>
+					</li>
+			<li class="sub"><a href="Gallery.html">Gallery</a></li>
+			<li class="sub"><a href="Register.html">Register</a></li>
+		</ul>			
+	</div><!--header-->
+<div id="content">
+<div id="left">
+<h1 class="s">Top 10 Best Android SmartPhones,<br>in 2019</h1>
+<ol>
+	<li><h3>Samsung Galaxy Note 10 Series</h3></li>
+	<li><h3>Oneplus 7 Pro</h3></li>
+	<li><h3>Samsung Galaxy S10 Series</h3></li>
+	<li><h3>Sony Xperia 1</h3></li>
+	<li><h3>Asus ROG Phone 2</h3></li>
+	<li><h3>LG G8 ThinQ</h3></li>
+	<li><h3>Google Pixel 3 Series</h3></li>
+	<li><h3>Honor 20 Pro</h3></li>
+	<li><h3>Xiaomi Mi 9T Pro</h3></li>
+	<li><h3>Huawei P30 Pro</h3></li>
+</ol>
+<br><br><br>
+<h1 class="s">Top 10 World Best Smartphone in 2019</h1>
+<video width="400" controls>
+<source src="Video/Top_10_World_Best_Smartphone_in_2019.mp4" type="video/mp4">
+Don't support HTMl-5.
+</video><br><br><br><br><br><br><br><br>
+
+<h1 class="s">Top 10 Best Selling Android Phones,in 2018</h1>
+<ol>
+	<li><h3>Iphone 8</h3></li>
+	<li><h3>Iphone X</h3></li>
+	<li><h3>Iphone 8 Plus</h3></li>
+	<li><h3>Samsung Galaxy Grand Prime Plus</h3></li>
+	<li><h3>Iphone XR</h3></li>
+	<li><h3>Iphone XS Max</h3></li>
+	<li><h3>Samsung Galaxy S9</h3></li>
+	<li><h3>Samsung Galaxy S9 Plus</h3></li>
+	<li><h3>P20 Lite</h3></li>
+	<li><h3>Iphone XS</h3></li>
+</ol>
+<br><br><br><br><br><br><br><br>
+<h1 class="s">Top 15 Best Smartphone in 2018</h1>
+<video width="400" controls>
+<source src="Video/Top_15_Best_Smartphone_in_2018.mp4" type="video/mp4">
+Don't support HTMl-5.
+</video>
+<br><br><br><br><br><br><br><br>
+<img src="img/Asusrogphone2.jpg" width="100">
+<figcaption><i><b>Asus ROG Phone 2</b></i></figcaption><br>
+<img src="img/Asuszenfone6.jpg" width="100">
+<figcaption><i><b>Asus ZenFone 6</b></i></figcaption><br>
+<img src="img/Oneplus7pro.jpg" width="100">
+<figcaption><i><b>Oneplus 7 Pro</b></i></figcaption><br>
+<img src="img/Oneplus7.jpg" width="100">
+<figcaption><i><b>Oneplus 7</b></i></figcaption><br>
+<img src="img/Mi9.jpg" width="100">
+<figcaption><i><b>Mi 9</b></i></figcaption>
+</div><!--left-->
+
+<div id="center">
+<br>
+<img src="img/Samsungnote10.jpg" width="80">
+<figcaption><i><b>Samsung Note10</b></i></figcaption>
+<img src="img/Oneplus7pro.jpg" width="100">
+<figcaption><i><b>Oneplus 7 Pro</b></i></figcaption>
+<img src="img/Samsungs10.jpg" width="100">
+<figcaption><i><b>Samsung S10</b></i></figcaption>
+<img src="img/Sonyxperia1.jpg" width="100">
+<figcaption><i><b>Sony Xperia 1</b></i></figcaption><br><br><br>
+
+<img src="img/iphone xr.jpeg" width="80">
+<figcaption><i><b>Iphone XR</b></i></figcaption>
+<img src="img/iphone 11.jpg" width="100">
+<figcaption><i><b>Iphone 11</b></i></figcaption>
+<img src="img/Samsunggalaxya10.jpg" width="100">
+<figcaption><i><b>Samsung Galaxy A10</b></i></figcaption>
+<img src="img/Samsunggalaxya50.jpg" width="100">
+<figcaption><i><b>Samsung Galaxy A50</b></i></figcaption><br><br><br>
+
+<img src="img/Iphone8.jpg" width="100">
+<figcaption><i><b>Iphone 8</b></i></figcaption>
+<img src="img/iphone x.jpg" width="100">
+<figcaption><i><b>Iphone X</b></i></figcaption>
+<img src="img/Iphone8plus.jpg" width="100">
+<figcaption><i><b>Iphone 8 Plus</b></i></figcaption>
+<img src="img/Samsunggalaxygrandprimeplus.jpg" width="100">
+<figcaption><i><b>Samsung Galaxy Grand Pirme Plus</b></i></figcaption><br><br><br><br><br>
+
+
+<img src="img/Googlepixel3xl.jpg" width="100">
+<figcaption><i><b>Google Pixel 3 Xl</b></i></figcaption>
+<img src="img/Oneplus6t.jpg" width="100">
+<figcaption><i><b>Oneplus 6T</b></i></figcaption>
+<img src="img/Samsungs9.jpg" width="100">
+<figcaption><i><b>Samsung Galaxy S9</b></i></figcaption>
+<img src="img/Huaweimate20.jpg" width="100">
+<figcaption><i><b>Huawei Mate 20</b></i></figcaption>
+<br><br><br><br>
+<h1 class="s">Top 10 Best Performing Android Phones,Septermber 2019</h1>
+<ol>
+	<li><h3>Asus ROG Phone 2</h3></li>
+	<li><h3>Asus ZenFone 6(2019)</h3></li>
+	<li><h3>Oneplus 7Pro</h3></li>
+	<li><h3>Oneplus 7</h3></li>
+	<li><h3>Mi 9</h3></li>
+	<li><h3>Redmi K20 Pro</h3></li>
+	<li><h3>Mi Black Shark 2</h3></li>
+	<li><h3>Mi 9T Pro</h3></li>
+	<li><h3>Sony Xperia 1</h3></li>
+	<li><h3>Samsung Galaxy Note 10plus</h3></li>
+</ol>
+</div><!--center-->
+
+<div id="right">
+<br><br>
+<h1 class="s">Smartphone Awards 2019</h1>
+<video width="400" controls>
+<source src="Video/Smartphone_Awards_2019.mp4" type="video/mp4">
+Don't support HTMl-5.
+</video><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1 class="s">Top 10 Best Selling Android Phones,in 2019</h1>
+<ol>
+	<li><h3>Iphone XR</h3></li>
+	<li><h3>Iphone 11</h3></li>
+	<li><h3>Samsung Galaxy A10</h3></li>
+	<li><h3>Samsung Galaxy A50</h3></li>
+	<li><h3>Samsung Galaxy A20</h3></li>
+	<li><h3>Iphone 11 Pro Max</h3></li>
+	<li><h3>Iphone 8</h3></li>
+	<li><h3>Redmi Note 7</h3></li>
+	<li><h3>Iphone 11 Pro</h3></li>
+	<li><h3>Samsung Galaxy J2 Core</h3></li>
+</ol>
+<br><br><br><br><br><br><br><br><br><br>
+<h1 class="s">Smartphone Awards 2018</h1>
+<video width="400" controls>
+<source src="Video/Smartphone_Awards_2018.mp4" type="video/mp4">
+Don't support HTMl-5.
+</video>
+<br><br><br><br><br><br><br>
+<h1 class="s">Top 10 Best Android SmartPhones,in 2018</h1>
+<ol>
+	<li><h3>Google Pixel 3XL</h3></li>
+	<li><h3>Oneplus 6T</h3></li>
+	<li><h3>Samsung Galaxy S9</h3></li>
+	<li><h3>Huawei Mate 20</h3></li>
+	<li><h3>LG G7 ThinQ</h3></li>
+	<li><h3>Samsung Galaxy Note 9</h3></li>
+	<li><h3>Huawei P20 Pro</h3></li>
+	<li><h3>Xiaomi Mi Mix 4</h3></li>
+	<li><h3>HTC U12 Plus</h3></li>
+	<li><h3>Sony Experia XZ3</h3></li>
+</ol>
+<br><br><br><br>
+<h1 class="s">Best Camera Phones for Video Recording(2020)</h1>
+<video width="400" controls>
+<source src="Video/Best_Camera_Phones_for_Video_Recording(2020).mp4" type="video/mp4">
+Don't support HTMl-5.
+</video>
+
+<h1 class="s">Top 10 Best Performing Android Smartphone<br>(November 2019)</h1>
+<video width="400" controls>
+<source src="Video/Top_10_Best_Performing_Android_Flagship_Smartphones._November_2019(1080p).mp4" type="video/mp4">
+Don't support HTMl-5.
+</video>
+</div><!--right-->
+</div><!--content-->
+<div id="footer">
+<p class="ft">2020 ,Spec-X SmartPhone Shop</p>
+</div><!--footer-->
+<h1 class="s">Welcome to Spec-X Shop</h1>
+</body>
+</html>
